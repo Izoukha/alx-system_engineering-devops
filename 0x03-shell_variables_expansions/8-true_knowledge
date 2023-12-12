@@ -1,10 +1,2 @@
 #!/bin/bash
-# Check if TRUEKNOWLEDGE is set
-if [ -z "$TRUEKNOWLEDGE" ]; then
-    echo "TRUEKNOWLEDGE is not set."
-    exit 1
-fi
-
-# Perform the addition and print the result
-result=$(($TRUEKNOWLEDGE + 128))
-echo $result
+echo $(($TRUEKNOWLEDGE+128))
